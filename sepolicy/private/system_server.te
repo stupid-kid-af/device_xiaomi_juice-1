@@ -1,3 +1,5 @@
-allow system_server sysfs_kgsl:file r_file_perms;
+#allow system_server sysfs_kgsl:file r_file_perms;
 
-get_prop(system_server, vendor_camera_prop)
+#get_prop(system_server, vendor_camera_prop)
+
+#allow system_server vendor_camera_prop:file {read getattr map open};
